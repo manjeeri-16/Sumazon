@@ -1,0 +1,742 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+.btn-field {
+  background-color: midnightblue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  }
+
+.btn-field:hover {
+   background-color: cornflowerblue;
+   }
+
+/*-------------------- Header Styles-------------------*/
+
+#header{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background:rgb(254, 254, 254);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 60px;
+    color: #00008B;
+}
+
+.logo{
+   width: 120px; 
+    height: auto; 
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 5px;
+    float: left;
+    
+}
+
+#navbar li a{
+    display: block;
+    text-align: center;
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: midnightblue;
+    transition: 0.3s ease;
+}
+
+#navbar li form {
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 12px;
+  color: white;
+}
+
+#navbar li input{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+#navbar li button{
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+#navbar li button:hover{
+  color: cornflowerblue;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: cornflowerblue;
+}
+
+/*------------------------Main Page---------------------------*/
+#hero{
+  background-image: url("Images/homeimg.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 10%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#hero h4{
+  padding-bottom: 15px;
+  color: aliceblue;
+}
+
+#hero button{
+  background-image: url("Images/button.png");
+  background-color: transparent;
+  width: 12%;
+  height: 7%;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  cursor: pointer;
+  font-size: 15px;
+  color: rgb(232, 201, 245);
+  font-weight: 500;
+
+}
+
+.pro p {
+font-size: 18px;
+color: midnightblue;
+margin-bottom: 5px;
+}
+
+#hero h1 {
+  margin: 10px 0;
+  font-size: 40px;
+}
+
+/*------------------------------- product section------------------------------- */
+#product1 {
+  background-color: #f9f9f9;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+#product1 h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pro {
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.pro img {
+  max-width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.pro p {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.pro span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.pro button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #191970;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pro button:hover {
+  background-color: cornflowerblue
+}
+
+/*----------------------Register Page---------------------------*/
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  background-image: url(Images/admin-login-background-images-8.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  height: 85%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: midnightblue;
+  position: relative;
+}
+
+.form-box h1::after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  border-radius: 3px;
+  background: midnightblue;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-field {
+  position: relative;
+  background: #eaeaea;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 10px 30px;
+  height: 60px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.input-field input {
+  width: 100%;
+  top: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.input-field i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+.input-group {
+  margin-bottom: 20px;
+  height: 400px;
+}
+
+.btn-field {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button[type="submit"] {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: cornflowerblue;
+}
+
+form p a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+
+/*----------------------Login Page---------------------------*/
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(Images/admin-login-background-images-8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.form-box {
+  width: 90%;
+  max-width: 450px;
+  margin: auto; 
+  background: #fff;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1 {
+  font-size: 30px;
+  margin-bottom: 20px; 
+  color: midnightblue;
+}
+
+.input-field {
+  position: relative;
+  background: #eaeaea;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 15px 20px; 
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  flex: 1; 
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.input-field i {
+  margin-right: 10px;
+}
+
+.form-select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.btn-field {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+button[type="submit"]:hover {
+  background-color: cornflowerblue;
+}
+
+/*-----------------Profile Page-----------------*/
+
+.profile-container {
+  width: 90%;
+  max-width: 800px;
+  height: 700px;
+  margin: 80px auto;
+  padding: 60px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; 
+}
+
+.profile-container h1 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: midnightblue;
+    position: relative;
+}
+
+.profile-container h1::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    border-radius: 3px;
+    background: midnightblue;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    color: #00008B;
+}
+
+.form-group input,
+.form-group textarea{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-group input i{
+  margin-right: 10px;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message p.success {
+  color: green;
+}
+
+.message p.error {
+  color: red;
+}
+
+
+/*------------------------Contact page------------------------*/
+#contact {
+  padding: 40px;
+  text-align: center;
+}
+
+#contact h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+#contact p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-form button {
+  background-color: midnightblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: cornflowerblue;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/*----------------------Admin Page------------------------*/
+
+#admin-product-form input[type="text"],
+#admin-product-form input[type="number"],
+#admin-product-form textarea {
+  width: 50%;
+  height: 5vh;
+  margin-top: 10px;
+  margin-left: 30px;
+  
+}
+
+#admin-product-form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    
+}
+
+table th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 5px;
+    text-align: left;
+}
+
+table td{
+  padding: 5px;
+}
+
+table th {
+    background-color: midnightblue;
+    color: white;
+    font-family: "Spartan", sans-serif;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table input[type="text"],
+table input[type="number"],
+table textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+table button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table a {
+  display: inline-block;
+    color: red;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-heading {
+  color: #333;
+}
+
+.cart-summary {
+  margin-bottom: 20px;
+}
+
+.confirm-order-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.confirm-order-btn:hover {
+  background-color: #45a049;
+}
+
+/*-----------------Order Confirmation Page------------------*/
+
+.confirmation-heading {
+  color: #333;
+}
+
+.confirmation-message {
+  margin-bottom: 20px;
+}
+
+.return-home-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.return-home-btn:hover {
+  background-color: #45a049;
+}
+
+/*-----------------------Role Select Page-----------------*/
+.background-image {
+  background-image: url('Images/admin-login-background-images-8.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+}
+
+.role-selection-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}

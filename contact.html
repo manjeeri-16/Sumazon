@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sumazon</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="Style.css">
+</head>
+        <style>
+            body {
+                background-image: url('Images/admin-login-background-images-8.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+        </style>
+<body>
+    <section id="header">
+        <a href="#"><img src="Images/Logo1.png" class="logo" alt="Sumazon"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="Main.php">Home</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li><a href="Cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li><a href="Profile.php"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h4>Have a Question?</h4>
+        <h1>Contact Us</h1>
+        <p>We are here to help. Reach out to us if you have any questions, concerns, or feedback.</p>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Our Information</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Sumazon Street, City, Country</p>
+                <p><i class="fas fa-envelope"></i> info@sumazon.com</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+            </div>
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form action="send_message.php" method="POST" id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit" id="send-button">Send Message</button>
+                </form>
+                <div id="success-message" style="display: none; color: green; margin-top: 10px;">
+                    Message sent successfully!
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sumazon. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to show success message after form submission
+        const form = document.getElementById('contact-form');
+        const sendButton = document.getElementById('send-button');
+        const successMessage = document.getElementById('success-message');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            successMessage.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
